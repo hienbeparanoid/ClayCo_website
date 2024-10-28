@@ -4,21 +4,17 @@
     <a>&nbsp;</a>
   </div>
   <div class="bar">
-    <a><img src="assets/images/bar.png"></a>
+    <a><img src="assets/images/or.png" height="300px"
+      width="50px"></a>
   </div>
   <div>
     <a>&nbsp;</a>
   </div>
   <div class="content">
     <a>&nbsp;</a>
-    <a class="bold">CÙNG BEAURITY</a>
-    <a class="bold">SỐNG XANH NHƯ LÁ</a>
-    <p style="font-size: 18px;" align="justify">Tại Việt Nam, thực vật đặc biệt là lá cây hết sức phong phú, nếu chúng
-      ta biết cách đưa chúng vào sử dụng trong mỹ phẩm thuần chay thì sẽ giúp được người nông dân kiếm thêm được thu
-      nhập, nâng cao chất lượng nông sản của họ và nâng cao giá trị của mỹ phẩm Việt. Đó là lý do thôi thúc BEAURITY
-      nghiên cứu và cho ra đời những sản phẩm làm đẹp từ lá cây với 90% có nguồn gốc từ các hộ nông dân Việt Nam, an
-      toàn, lành tính, không sử dụng thành phần từ động vật và nói không với thử nghiệm trên động vật, có thể áp dụng
-      trên da của mọi lứa tuổi.</p>
+    <a class="bold">CLAYCO.</a>
+    <a class="bold">The Essence of Ceramic Art, Flowers, and Greenery</a>
+    <p style="font-size: 18px;" align="justify">At Clayco, we believe that every product carries its own story—a story of the harmonious blend between traditional ceramic artistry, the freshness of flowers, and the gentle green of plants. With finely crafted ceramic pots, vibrant blooming flowers, and lush, thriving plants, Clayco brings not just a touch of nature to your space but also inspires a beautiful and sustainable lifestyle. Each item is carefully selected, from the skilled hands of artisans to the lovingly nurtured flowers and plants, ensuring that you can bring home a piece of pure, natural beauty. Visit Clayco, and let your soul unwind in a space filled with serene greenery and exquisite craftsmanship!</p>
   </div>
   <div class="image-container">
     <img src="assets/images/xanhnhula.png" style="width: 350px;">
@@ -28,17 +24,17 @@
 <!--SECTION 2-->
 <div class="sanpham">
   <br />
-  <a class="bold">SẢN PHẨM BEAURITY</a>
+  <a class="bold">CLAYCO PRODUCTS</a>
   <a class="button" id="product">
     <a routerLink="/app-category">
-      <button type="submit">Xem tất cả</button>
+      <button type="submit">View all</button>
     </a>
   </a>
   <br />
 </div>
 
 <!--SECTION 3-->
-<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">SẢN PHẨM MỚI</p>
+<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">NEW ARRIVALS</p>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of cosmetics | slice:0:5">
     <div class="product-item">
@@ -49,13 +45,13 @@
         <p class="product-item--info">{{ cosmetic.Name }}</p>
         <p class="product-item--price">{{ cosmetic.Price }} VNĐ</p>
       </div>
-      <button class="product-item--add" (click)="addToCart(cosmetic)">Thêm vào giỏ hàng</button>
+      <button class="product-item--add" (click)="addToCart(cosmetic)">Add to cart</button>
     </div>
   </div>
 </div>
 
 <!--SECTION 4-->
-<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">SẢN PHẨM NỔI BẬT</p>
+<p style="font-weight: bold; font-size: 30px; color: BLACK; text-align: center;">TOP-SELLER PRODUCTS</p>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of randomFeaturedCosmetics">
     <div class="product-item">
@@ -75,7 +71,7 @@
 <!--SECTION 5-->
 <div class="feedback">
   <br />
-  <a class="bold">FEEDBACK KHÁCH HÀNG</a>
+  <a class="bold">CUSTOMER FEEDBACK</a>
   <br />
   <div class="feedbackdetails">
     <div></div>
@@ -96,39 +92,39 @@
   <br />
 </div>
 
-<!--SECTION 6-->
-<div id="chungnhanAnToan" class="chungnhan" name="chungnhan">
-  <br />
-  <a class="bold">CHỨNG NHẬN AN TOÀN</a>
-  <div class="chungnhandetail">
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/leaping_bunny.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">Leaping Bunny</b>
-      <b>CHƯƠNG TRÌNH LEAPING BUNNY</b>
-      <p align="justify">Chương trình Leaping Bunny của tổ chức Cruelty Free International được xem là "tiêu chuẩn
-        vàng" toàn cầu cho
-        các sản phẩm không thử nghiệm trên động vật.</p>
+<!--SECTION 6: Redesigned-->
+<div class="main-container">
+  <div class="shipping-handling">
+    <div class="our-services">
+      <h2 class="section-title">OUR SERVICES</h2>
+      <div class="service-container">
+        <div class="service-item">
+          <img src="assets/images/customization.png" alt="Customization Service">
+          <h3 class="service-title">Customization</h3>
+          <p class="service-description">Craft a personalized masterpiece that is uniquely yours, designed to reflect your style and individuality.</p>
+          <button class="service-button">Customize Now</button>
+        </div>
+        <div class="service-item">
+          <img src="assets/images/workshop.png" alt="Workshop">
+          <h3 class="service-title">Workshop</h3>
+          <p class="service-description">Unleash your creativity at our workshops, where you'll craft one-of-a-kind products that reflect your unique style and passion.</p>
+          <button class="service-button">Join Now</button>
+        </div>
+      </div>
     </div>
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/vegan_society.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">The Vegan Society</b>
-      <b>HIỆP HỘI THUẦN CHAY QUỐC TẾ</b>
-      <p align="justify">The Vegan Society (Hiệp hội thuần chay quốc tế) là một trong những chứng nhận uy tín xác thực
-        cho các sản phẩm
-        không có thành phần từ động vật và không thử nghiệm trên động vật.</p>
+    <div class="service-values">
+      <div class="value-item">
+        <h3 class="value-title">Free & Fast Delivery</h3>
+        <p class="value-description">Enjoy free delivery for all orders over $100.</p>
+      </div>
+      <div class="value-item">
+        <h3 class="value-title">24/7 Customer Service</h3>
+        <p class="value-description">Friendly support available anytime you need.</p>
+      </div>
+      <div class="value-item">
+        <h3 class="value-title">Money Back Guarantee</h3>
+        <p class="value-description">Easy returns within 30 days if you are not satisfied.</p>
+      </div>
     </div>
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/Peta.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">PETA</b>
-      <b>ANIMAL TEST-FREE & VEGAN</b>
-      <p align="justify">Chương trình Beauty Without Bunnies của tổ chức bảo vệ quyền lợi động vật toàn cầu PETA là
-        chương trình bảo vệ
-        và cam kết không có sự tàn ác đối với động vật uy tín trên thế giới.</p>
-    </div>
-    <div>&nbsp;</div>
-    <br />
   </div>
 </div>

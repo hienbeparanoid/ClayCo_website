@@ -104,7 +104,7 @@ export class ForgotPasswordComponent implements OnInit {
   onComplete(event: Event) {
     event.preventDefault();
     if (!this.isPhoneNumberValid || !this.isVerificationCodeValid) {
-      alert('Vui lòng nhập đúng số điện thoại và mã xác nhận!');
+      alert('Please enter the correct phone number and verification code!');
       return;
     }
     this.accountService.checkPhoneNumberExist(this.phoneNumber).subscribe({
@@ -113,12 +113,12 @@ export class ForgotPasswordComponent implements OnInit {
         if (this.phoneNumbers.phonenumber == this.phoneNumber) {
           this.router.navigate(['/app-reset-password']);
         } else {
-          alert('Số điện thoại không tồn tại!');
+          alert('Phone number is unavailable!');
         }
       },
       error: (err) => {
         this.errorMessage = err;
-        alert('Lỗi trong quá trình kiểm tra số điện thoại!');
+        alert('An error occurred during phone number verification!');
       },
     });
   }

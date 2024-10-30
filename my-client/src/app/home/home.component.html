@@ -1,38 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <!--SECTION 1-->
 <div class="home_banner">
   <div>
     <a>&nbsp;</a>
   </div>
   <div class="bar">
-    <a><img src="assets/images/or.png" height="300px"
-      width="50px"></a>
+    
   </div>
   <div>
     <a>&nbsp;</a>
   </div>
   <div class="content">
-    <a>&nbsp;</a>
-    <a class="bold">CLAYCO WEBSITE</a>
-    <a class="bold">STILL LOADING.....LONGGG</a>
-    <p style="font-size: 18px;" align="justify">Tại Việt Nam, thực vật đặc biệt là lá cây hết sức phong phú, nếu chúng
-      ta biết cách đưa chúng vào sử dụng trong mỹ phẩm thuần chay thì sẽ giúp được người nông dân kiếm thêm được thu
-      nhập, nâng cao chất lượng nông sản của họ và nâng cao giá trị của mỹ phẩm Việt. Đó là lý do thôi thúc BEAURITY
-      nghiên cứu và cho ra đời những sản phẩm làm đẹp từ lá cây với 90% có nguồn gốc từ các hộ nông dân Việt Nam, an
-      toàn, lành tính, không sử dụng thành phần từ động vật và nói không với thử nghiệm trên động vật, có thể áp dụng
-      trên da của mọi lứa tuổi.</p>
-    <a class="bold">CLAYCO.</a>
-    <a class="bold">The Essence of Ceramic Art, Flowers, and Greenery</a>
-    <p style="font-size: 18px;" align="justify">At Clayco, we believe that every product carries its own story—a story of the harmonious blend between traditional ceramic artistry, the freshness of flowers, and the gentle green of plants. With finely crafted ceramic pots, vibrant blooming flowers, and lush, thriving plants, Clayco brings not just a touch of nature to your space but also inspires a beautiful and sustainable lifestyle. Each item is carefully selected, from the skilled hands of artisans to the lovingly nurtured flowers and plants, ensuring that you can bring home a piece of pure, natural beauty. Visit Clayco, and let your soul unwind in a space filled with serene greenery and exquisite craftsmanship!</p>
-  </div>
-  <div class="image-container">
-    <img src="assets/images/xanhnhula.png" style="width: 350px;">
-  </div>
+    <div class="text-container">
+        <a class="bold">CLAYCO.</a>
+        <a class="bold">The Essence of Ceramic Art, Flowers, and Greenery</a>
+        <p>"Where ceramic artistry meets fresh blooms and lush greenery for a serene, sustainable lifestyle."</p>
+    </div>
+    <button>Explore our collection of gorgeous products &nbsp; &nbsp;<i class="fas fa-arrow-right"></i></button>
+</div>
+
+  
 </div>
 
 <!--SECTION 2-->
 <div class="sanpham">
   <br />
-  <a class="bold">CLAYCO PRODUCTS</a>
+  <a class="bold" style="color: black;">CLAYCO PRODUCTS</a>
   <a class="button" id="product">
     <a routerLink="/app-category">
       <button type="submit">View all</button>
@@ -42,7 +36,6 @@
 </div>
 
 <!--SECTION 3-->
-<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">NEW ARRIVALS</p>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of cosmetics | slice:0:5">
     <div class="product-item">
@@ -84,17 +77,18 @@
   <div class="feedbackdetails">
     <div></div>
     <div class="image-container">
-      <a><img src="assets/images/fb1.png" style="width: 400px;"></a>
+      <a><img src="assets/images/plantfb.jpg" style="width: 400px; height:300px"></a>
     </div>
     <div></div>
     <div align="justify">
       <br />
-      <a>Với giá thành phù hợp với túi tiền của phần đông khách hàng, chất lượng sản phẩm tốt, được sản xuất hoàn toàn
-        trong nước, Beaurity xứng đáng là một trong những thương hiệu Việt đang góp phần đưa mĩ phẩm Việt dần thu hẹp
-        khoảng cách với thị trường mĩ phẩm trên thế giới. Ngoài chất lượng tốt, giá tiền hợp lý, mình còn rất trân
-        trọng những nỗ lực mà hãng cố gắng đưa đến cho cộng đồng, nhất là trong vấn đề bảo vệ môi trường, sống xanh và
-        mỹ phẩm thuần chay không thử nghiệm trên động vật.</a>
-    </div>
+      <a style="line-height: 1.6; display: block; text-align: justify;">
+        With affordable prices that suit the budget of most customers, high-quality products made entirely in Vietnam, Beaurity deserves to be one of the Vietnamese brands that are helping to close the gap with the global cosmetics market. In addition to good quality and reasonable prices, I greatly appreciate the brand's efforts to contribute to the community, especially in matters of environmental protection, green living, and vegan cosmetics that are not tested on animals.
+        <br>
+        <BR>
+        <span style="font-style: italic;">David Nguyen | CEO of Star Sky Company</span>
+      </a>
+        </div>
     <div></div>
   </div>
   <br />

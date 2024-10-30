@@ -3,19 +3,19 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
 <div class="main-shopping">
-  <p class="shopping-navigate"><a routerLink="/app-home">Trang chủ</a> / <a routerLink="/app-cart">Giỏ hàng</a></p>
+  <p class="shopping-navigate"><a routerLink="/app-home">Home</a> / <a routerLink="/app-cart">Cart</a></p>
   <div class="shopping__cart">
     <div class="shopping__cart-left">
       <div class="shopping__cart-left--header">
-        <h3>Giỏ hàng ({{quantityItem}})</h3>
+        <h3>Cart ({{quantityItem}})</h3>
       </div>
       <div class="content-error" id="displayview" *ngIf="display; else viewItem">
         <img class="img_icon" style="height: 300px;" src="assets/images/emptycart.jpg" alt="">
-        <h4 style="color:rgb(116, 116, 116);">Không có sản phẩm trong giỏ hàng</h4>
+        <h4 style="color:rgb(116, 116, 116);">Your cart is currently empty</h4>
         <p>
           <button class="orther__product-item--add"
-            style="margin-top: 20px; margin-bottom: 20px; width:30%; font-size: 14px; font-weight: 500;background-color:#2D982A; border-color:#2D982A ;"
-            id="clicktoreturn" (click)="returnHome()">Về trang chủ</button>
+            style="margin-top: 20px; margin-bottom: 20px; width:30%; font-size: 14px; font-weight: 500;background-color:#8AA3A0; border-color:#7cb5ae; cursor: pointer ;"
+            id="clicktoreturn" (click)="returnHome()">Back to home</button>
         </p>
       </div>
       <ng-template #viewItem>
@@ -26,15 +26,15 @@
                 <th scope="col" class="border-0 align-left">
                 </th>
                 <th scope="col" class="border-0  align-left">
-                  <div>Sản phẩm</div>
+                  <div>Product</div>
                 </th>
                 <th scope="col" class="border-0  align-left">
                 </th>
                 <th scope="col" class="border-0  align-left">
-                  <div>Đơn giá</div>
+                  <div>Price</div>
                 </th>
                 <th scope="col" class="border-0  align-left">
-                  <div>Số lượng</div>
+                  <div>Quantity</div>
                 </th>
                 <th scope="col" class="border-0  align-left">
                 </th>
@@ -58,7 +58,7 @@
                   </div>
                 </td>
                 <td class="border-0 align-left">{{item.Name}}</td>
-                <td class="border-0 align-left">{{item.Price}} VNĐ</td>
+                <td class="border-0 align-left">{{item.Price}} $</td>
                 <td class="border-0 align-left">
                   <div class="shopping__cart-left--detail-row-quantity">
                     <button id="clickdecrease" (click)="decrease(item)">-</button>
@@ -81,23 +81,23 @@
     <div class="shopping__cart-right">
       <p class="shopping__cart-right--header">
         <span class="material-icons-outlined">shopping_bag</span>
-        <span class="title-bag">Đơn hàng</span>
+        <span class="title-bag">Order</span>
       </p>
       <p class="shopping__cart-right--row">
-        <span class="shopping__cart-right--row-left">Tổng tiền</span>
-        <span class="shopping__cart-right--row-right">{{ total }} VNĐ</span>
+        <span class="shopping__cart-right--row-left">Subtotal</span>
+        <span class="shopping__cart-right--row-right">{{ total }} $</span>
       </p>
       <p class="shopping__cart-right--row">
-        <span class="shopping__cart-right--row-left">Tạm tính</span>
-        <span class="shopping__cart-right--row-right">{{ preprice }} VNĐ</span>
+        <span class="shopping__cart-right--row-left">Total price</span>
+        <span class="shopping__cart-right--row-right">{{ preprice }} $</span>
       </p>
       <p class="shopping__cart-right--row shopping__cart-right--row--button">
-        <button class="shopping__cart-right--row--button" (click)="makePayment()">Đặt hàng</button>
+        <button class="shopping__cart-right--row--button" (click)="makePayment()">Place order</button>
       </p>
     </div>
   </div>
 
-  <p class="shopping__orther-product--header">Sản phẩm khác</p>
+  <p class="shopping__orther-product--header">You might also like</p>
   <div class="danhmucproduct">
     <div class="product" *ngFor="let same_cosmetic of cosmetics.slice(0,5)">
       <div class="product-item">
@@ -106,10 +106,10 @@
             <img src="{{ same_cosmetic.Image }}" style="width: 180px;">
           </div>
           <p class="product-item--info">{{ same_cosmetic.Name }}</p>
-          <p class="product-item--price">{{ same_cosmetic.Price }} VNĐ</p>
+          <p class="product-item--price">{{ same_cosmetic.Price }} $</p>
         </div>
         <button class="orther__product-item--add" (click)="addToCart(same_cosmetic)">
-          Thêm vào giỏ hàng
+          Add to cart
         </button>
       </div>
     </div>
@@ -119,12 +119,12 @@
 <!-- popup -->
 <div class="popup" *ngIf="isLogin">
   <div class="popup-container">
-    <h2 class="popup-title">Đặt hàng</h2>
+    <h2 class="popup-title">Place order</h2>
     <hr>
-    <p class="popup-message">Bạn vui lòng <span class="main-color">đăng nhập</span> để tiếp tục đặt hàng nhé!</p>
+    <p class="popup-message">Please <span class="main-color">log in</span> to continue order!</p>
     <div class="popup-buttons">
-      <button class="popup-button" (click)="onLogin()">Đăng nhập</button>
-      <button class="popup-button" (click)="onBack()">Trở lại</button>
+      <button class="popup-button" (click)="onLogin()">Login</button>
+      <button class="popup-button" (click)="onBack()">Go back</button>
     </div>
   </div>
 </div>

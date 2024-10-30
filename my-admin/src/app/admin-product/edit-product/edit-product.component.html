@@ -16,45 +16,45 @@
       <img src="assets/admin-avatar.png" class="admin-ava" />
     </div>
     <div class="page-title">
-      <p>Sản phẩm</p>
+      <p>Products</p>
       <div class="page-search">
-        <input type="search" id="search" placeholder="Tìm kiếm..." />
+        <input type="search" id="search" placeholder="Search..." />
         <span class="material-symbols-outlined">search</span>
       </div>
     </div>
     <div class="page-body">
       <div class="product__action">
-        <span><button id="save" (click)="putCosmetic()">Lưu</button></span>
-        <span><button id="back" (click)="goBack()">Hủy</button></span>
+        <span><button id="save" (click)="putCosmetic()">Save</button></span>
+        <span><button id="back" (click)="goBack()">Cancel</button></span>
       </div>
-      <p>Sửa thông tin chi tiết sản phẩm</p>
+      <p>Edit Product Details</p>
       <div class="page-body-content">
         <div class="content_left">
-          <label for="myFile">Ảnh:
+          <label for="myFile">Image:
             <input type="file" class="file-input" (change)="onFileSelected($event, cosmetic)" #fileUpload name="image"
               [(ngModel)]="cosmetic.Image"><br>
             <img src="{{cosmetic.Image}}" alt="" width="109px"><br>
           </label>
-          <label for="nameEdit">Tên sản phẩm:
+          <label for="nameEdit">Product's name:
             <div>
               <input type="text" class="form-control" name="nameEdit" id="nameEdit"
                 [(ngModel)]="cosmetic.Name" />
             </div>
           </label>
-          <label for="categoryEdit">Danh mục:
+          <label for="categoryEdit">Category:
             <div>
               <select name="category" id="categoryEdit" [(ngModel)]="cosmetic.Category">
                 <option *ngFor="let cat of categories" [value]="cat.Name">{{ cat.Name }}</option>
               </select>
             </div>
           </label>
-          <label for="priceEdit">Đơn giá:
+          <label for="priceEdit">Price:
             <div>
               <input type="text" class="form-control"  name="priceEdit" id="priceEdit"
                 [(ngModel)]="cosmetic.Price" />
             </div>
           </label>
-          <label for="stockEdit">Tồn kho:
+          <label for="stockEdit">Inventory:
             <div>
               <input type="text" class="form-control" name="stockEdit" id="stockEdit"
                 [(ngModel)]="cosmetic.Quantity" />
@@ -62,7 +62,7 @@
           </label>
         </div>
         <div class="content_right">
-          <label for="useEdit">Công dụng:
+          <label for="useEdit">Usage:
             <div>
               <input type="text" class="form-control" name="useEdit" id="useEdit"
                 [(ngModel)]="cosmetic.Uses" />
@@ -74,21 +74,21 @@
                 [(ngModel)]="cosmetic.Ingredients" />
             </div>
           </label>
-          <label for="descriptionEdit">Mô tả:
+          <label for="descriptionEdit">Description:
             <div>
               <textarea type="text" class="form-control" #name="ngModel" name="descriptionEdit" id="descriptionEdit"
                 [(ngModel)]="cosmetic.Description">
             </textarea>
             </div>
           </label>
-          <label for="warningEdit">Lưu ý sử dụng:
+          <label for="warningEdit">Usage notes:
             <div>
               <textarea type="text" class="form-control" #name="ngModel" name="warningEdit" id="warningEdit"
                 [(ngModel)]="cosmetic.Warnings">
           </textarea>
             </div>
           </label>
-          <label for="preserveEdit">Cách bảo quản:
+          <label for="preserveEdit">Storage Instructions:
             <div>
               <input type="text" class="form-control" #name="ngModel" name="preserveEdit" id="preserveEdit"
                 [(ngModel)]="cosmetic.Store" />

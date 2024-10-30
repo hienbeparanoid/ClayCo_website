@@ -16,41 +16,41 @@
       <img src="assets/admin-avatar.png" class="admin-ava" />
     </div>
     <div class="page-title">
-      <p>Sản phẩm</p>
+      <p>Products</p>
       <div class="page-search">
-        <input type="search" id="search" placeholder="Tìm kiếm..." />
+        <input type="search" id="search" placeholder="Search..." />
         <span class="material-symbols-outlined">search</span>
       </div>
     </div>
     <div class="page-body">
       <div class="product__action">
-        <span><button id="back" (click)="goBack()">Quay lại</button></span>
+        <span><button id="back" (click)="goBack()">Go back</button></span>
       </div>
-      <p>Thông tin chi tiết sản phẩm</p>
+      <p>Product details</p>
       <div class="page-body-content">
         <div class="content_left">
-          <label>Ảnh:
+          <label>Image:
             <img src="{{cosmetic.Image}}" alt="" width="160"><br>
           </label>
-          <label for="name">Tên sản phẩm:
+          <label for="name">Product's name:
             <div>
               <input type="text" class="form-control" name="name" id="name"
                 [(ngModel)]="cosmetic.Name" readonly />
             </div>
           </label>
-          <label for="category">Danh mục:
+          <label for="category">Category:
             <div>
               <input type="text" class="form-control" name="category" id="category"
                 [(ngModel)]="cosmetic.Category" readonly />
             </div>
           </label>
-          <label for="price">Đơn giá:
+          <label for="price">Price:
             <div>
               <input type="text" class="form-control" name="price" id="price"
                 [(ngModel)]="cosmetic.Price" readonly />
             </div>
           </label>
-          <label for="stock">Tồn kho:
+          <label for="stock">Inventory:
             <div>
               <input type="text" class="form-control" name="stock" id="stock"
                 [(ngModel)]="cosmetic.Quantity" readonly />
@@ -58,7 +58,7 @@
           </label>
         </div>
         <div class="content_right">
-          <label for="use">Công dụng:
+          <label for="use">Usage:
             <div>
               <input type="text" class="form-control" name="use" id="use"
                 [(ngModel)]="cosmetic.Uses" readonly />
@@ -70,19 +70,19 @@
                 [(ngModel)]="cosmetic.Ingredients" readonly />
             </div>
           </label>
-          <label for="description">Mô tả:
+          <label for="description">Description:
             <div>
               <textarea type="text" class="form-control" name="description" id="description"
                 [(ngModel)]="cosmetic.Description" readonly></textarea>
             </div>
           </label>
-          <label for="warning">Lưu ý sử dụng:
+          <label for="warning">Usage notes:
             <div>
               <textarea type="text" class="form-control" name="warning" id="warning"
                 [(ngModel)]="cosmetic.Warnings" readonly></textarea>
             </div>
           </label>
-          <label for="preserve">Cách bảo quản:
+          <label for="preserve">Storage Instructions:
             <div>
               <input type="text" class="form-control" name="preserve" id="preserve"
                 [(ngModel)]="cosmetic.Store" readonly />

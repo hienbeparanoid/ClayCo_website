@@ -1,112 +1,138 @@
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navigate__bar{
+
+/* Sidebar Background with Gradient */
+.navigate__bar {
     position: fixed;
-    background: #c0e9beb5;
+    background: linear-gradient(135deg, #8AA3A0, #8AA3A0);
     top: 0;
-    left: 0; 
+    left: 0;
     width: 15%;
     height: 100%;
     padding: 20px 0;
+    color: #FFFFFF;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav__title{
-    display: block;
+.nav__title {
     text-align: center;
-   
+    margin-bottom: 20px;
 }
-.nav__title img{
+
+.nav__title img {
     border-radius: 10px;
     max-width: 70%;
-    height: auto; 
-    display: block; 
-    margin: auto; 
-}
-
-.nav__content {
+    height: auto;
     display: block;
-    list-style: none;
-    text-decoration: none;
-    padding-inline-start: 20px;
-    padding-right: 10px;
-    margin-top: 30px;
+    margin: auto;
 }
 
-.navigate__bar--link{
-	display: flex;
+/* Navigation Links */
+.nav__content {
+    list-style: none;
+    padding: 20px;
+}
+
+.navigate__bar--link {
+    display: flex;
     align-items: center;
-	color:#024700;
-	font-size: 16px;
+    color: #ECEFF1;
+    font-size: 16px;
     text-decoration: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
     margin: 8px 0;
 }
-li{
-    height: fit-content;
-    padding: 1px 0;
+
+.navigate__bar--link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+li {
     margin: 5px 0;
 }
-.nav__content li:focus{
-    background-color: #fdfdfd7e !important;
-    color: #225730 !important;
-    font-weight: 700 !important;  
+
+/* Dropdown Menu */
+.nav__item--dropdown {
+    position: relative;
 }
-ul li:hover{
-    background-color: #ffffff3f;  
-}
-#dropdown-tab{
+
+#dropdown-tab {
     cursor: pointer;
-    margin-bottom: 10px;
 }
-.dropdown-list{
+
+.dropdown-list {
     visibility: hidden;
     display: none;
-    cursor: pointer;
-}
-.item--dropdown{
-    color: #024700 !important;
-    text-decoration: none;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    padding-left: 40px;
-}
-.item--dropdown:hover{
-    background-color: #ffffff3f;
-}
-.item--dropdown:focus{
-    background-color: #fdfdfd7e;
-    color: #225730 !important;
-    font-weight: 700;
-}
-.nav__item--dropdown:hover .dropdown-list{
-    visibility:visible;
-    display: flex;
     flex-direction: column;
-    cursor: pointer;
-}
-.material-icons-outlined{
-	color: #024700;
-	display: inline-block;
-    padding-left: 0px;
-    width: 21px;
-    height: 21px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin-top: 8px;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
 }
 
-.nav__item{
-    margin-left: 15px
+.nav__item--dropdown:hover .dropdown-list {
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
 }
-.nav__back{
+
+.item--dropdown {
+    color: #ECEFF1 !important;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+}
+
+.item--dropdown:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Effect for Icons */
+.material-icons-outlined {
+    color: #ECEFF1;
+    margin-right: 12px;
+    transition: color 0.3s ease;
+}
+
+.navigate__bar--link:hover .material-icons-outlined {
+    color: #005147;
+}
+
+/* Subtle Box Shadow for Hovered Items */
+ul li:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.nav__item {
+    margin-left: 5px;
+}
+
+/* Footer back button */
+.nav__back {
     color: #FFFFFF;
-    position:absolute;
+    position: absolute;
     display: flex;
     align-items: center;
-    float:right;
-    bottom:30px;
+    bottom: 30px;
     left: 10px;
-    width:100%;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
+.nav__back:hover {
+    color: #FFEB3B;
+}

@@ -11,11 +11,11 @@
 
         <div class="page-title">
             <div>
-                <strong>Danh mục sản phẩm</strong>
-                <button id="add" (click)="addCatLevel1()" class="add-button">Thêm danh mục</button>
+                <strong>Product categories</strong>
+                <button id="add" (click)="addCatLevel1()" class="add-button">Add categories</button>
             </div>
             <div class="page-search">
-                <input type="text" placeholder="  Search..." [(ngModel)]="keyword" name="keyword" required>
+                <input type="search" id="search" placeholder="Search...">
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
@@ -24,10 +24,10 @@
             <div class="category_list">
                 <table class="category_list__table">
                     <thead class="table_title">
-                        <th>STT</th>
-                        <th>Ảnh</th>
-                        <th>Tên danh mục</th>
-                        <th>Mô tả</th>
+                        <th>No.</th>
+                        <th>Image</th>
+                        <th>Category's name</th>
+                        <th>Description</th>
                         <th></th>
                     </thead>
                     <tbody class="table_content">

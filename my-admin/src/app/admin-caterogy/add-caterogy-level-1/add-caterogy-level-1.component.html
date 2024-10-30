@@ -16,29 +16,29 @@
         </div>
 
         <div class="page-title">
-            <p>Danh mục sản phẩm</p>
+            <p>Product category</p>
             <div class="page-search">
-                <input type="search" id="search" placeholder="Tìm kiếm..." />
+                <input type="search" id="search" placeholder="Search..." />
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
 
         <div class="page__content">
             <div class="content-button">
-                <button style="cursor: pointer;" (click)="postCategory()">Lưu</button>
-                <button style="cursor: pointer;" (click)="goBack()">Hủy</button>
+                <button style="cursor: pointer;" (click)="postCategory()">Save</button>
+                <button style="cursor: pointer;" (click)="goBack()">Cancel</button>
             </div>
-            <p>Thêm danh mục</p>
+            <p>Add category</p>
             <div class="content__box">
-                <label for="myFile">Ảnh:
+                <label for="myFile">Image:
                     <input type="file" class="file-input" (change)="onFileSelected($event, category)" #fileUpload name="image"
                       [(ngModel)]="category.Image"><br>
                   </label>
-                <label for="nameAdd">Tên danh mục:
+                <label for="nameAdd">Category's name:
                     <input type="text" class="form-control" id="nameAdd" [(ngModel)]="category.Name">
                 </label>
-                <label for="descriptionAdd">Mô tả danh mục:
-                    <textarea type="text" class="form-control" id="descriptionAdd" placeholder="Số lượng từ không vượt quá 150 từ" [(ngModel)]="category.Description"></textarea>
+                <label for="descriptionAdd">Category description:
+                    <textarea type="text" class="form-control" id="descriptionAdd" placeholder="The number of words must not exceed 150" [(ngModel)]="category.Description"></textarea>
                 </label>
             </div>
         </div>

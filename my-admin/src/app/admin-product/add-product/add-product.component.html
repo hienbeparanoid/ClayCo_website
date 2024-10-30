@@ -16,55 +16,55 @@
       <img src="assets/admin-avatar.png" class="admin-ava" />
     </div>
     <div class="page-title">
-      <strong>Sản phẩm</strong>
+      <strong>Product</strong>
       <div class="page-search">
-        <input type="search" id="search" placeholder="Tìm kiếm..." />
+        <input type="search" id="search" placeholder="Search..." />
         <span class="material-symbols-outlined">search</span>
       </div>
     </div>
     <div class="page-body">
       <div class="product__action">
-        <span><button id="save" (click)="postCosmetic()">Lưu</button></span>
-        <span><button id="back" (click)="goBack()">Hủy</button></span>
+        <span><button id="save" (click)="postCosmetic()">Save</button></span>
+        <span><button id="back" (click)="goBack()">Cancel</button></span>
       </div>
-      <p>Thêm sản phẩm</p>
+      <p>Add Product</p>
       <div class="page-body-content">
         <div class="content_left">
-          <label for="myFile">Ảnh:
+          <label for="myFile">Image:
             <input type="file" class="file-input" (change)="onFileSelected($event, cosmetic)" #fileUpload name="image"
               [(ngModel)]="cosmetic.Image"><br>
           </label>
-          <label for="name">Tên sản phẩm:
+          <label for="name">Product's name:
             <div>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Nhập tên"
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter product's name"
                 [(ngModel)]="cosmetic.Name"/>
             </div>
           </label>
-          <label for="category">Danh mục:
+          <label for="category">Category:
             <div>
               <select name="category" id="category" [(ngModel)]="cosmetic.Category">
                 <option *ngFor="let cat of categories_test" [value]="cat.Name">{{cat.Name}}</option>
               </select>
             </div>
           </label>
-          <label for="price">Đơn giá:
+          <label for="price">Price:
             <div>
               <input type="text" class="form-control" name="price" id="price"
-                placeholder="Nhập giá" [(ngModel)]="cosmetic.Price" />
+                placeholder="Enter price" [(ngModel)]="cosmetic.Price" />
             </div>
           </label>
-          <label for="stock">Tồn kho:
+          <label for="stock">Inventory:
             <div>
               <input type="text" class="form-control" name="stock" id="stock" 
-                placeholder="Nhập tồn kho" [(ngModel)]="cosmetic.Quantity"/>
+                placeholder="Enter Inventory" [(ngModel)]="cosmetic.Quantity"/>
             </div>
           </label>
         </div>
         <div class="content_right">
-          <label for="use">Công dụng:
+          <label for="use">Usage:
             <div>
               <input type="text" class="form-control" name="use" id="use"
-                placeholder="Nhập công dụng" [(ngModel)]="cosmetic.Uses" />
+                placeholder="Enter usage" [(ngModel)]="cosmetic.Uses" />
             </div>
           </label>
           <label for="ingredient">Thành phần:
@@ -73,24 +73,24 @@
                 placeholder="Nhập thành phần" [(ngModel)]="cosmetic.Ingredients" />
             </div>
           </label>
-          <label for="description">Mô tả:
+          <label for="description">Description:
             <div>
               <textarea type="text" class="form-control text-area" name="description" id="description" 
-                placeholder="Nhập mô tả" [(ngModel)]="cosmetic.Description">
+                placeholder="Enter description" [(ngModel)]="cosmetic.Description">
               </textarea>
             </div>
           </label>
-          <label for="warning">Lưu ý sử dụng:
+          <label for="warning">Usage Notes:
             <div>
               <textarea type="text" class="form-control text-area" name="warning" id="warning"
-                placeholder="Nhập lưu ý sử dụng" [(ngModel)]="cosmetic.Warnings">
+                placeholder="Enter usage notes" [(ngModel)]="cosmetic.Warnings">
               </textarea>
             </div>
           </label>
-          <label for="preserve">Cách bảo quản:
+          <label for="preserve">Storage Instructions:
             <div>
               <input type="text" class="form-control" name="preserve" id="preserve"
-                placeholder="Nhập cách bảo quản" [(ngModel)]="cosmetic.Store" />
+                placeholder="Enter storage instruction" [(ngModel)]="cosmetic.Store" />
             </div>
           </label>
         </div>

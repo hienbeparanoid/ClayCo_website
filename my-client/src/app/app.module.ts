@@ -28,6 +28,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupOtpComponent } from './sign-up/signup-otp/signup-otp.component';
 import { AccountcustomerService } from './SERVICES/accountcustomer.service';
 import { DealsComponent } from './deals/deals.component';
+import { CustomizationComponent } from './customization/customization.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { DealsComponent } from './deals/deals.component';
     ProfileComponent,
     SignupOtpComponent,
     DealsComponent,
+    CustomizationComponent,
   ],
   imports: [
     BrowserModule,

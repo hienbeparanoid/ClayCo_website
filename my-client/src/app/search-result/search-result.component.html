@@ -1,4 +1,4 @@
-<h2 style="color: #2D982A;">Chúng tôi tìm được <b>{{resultCount}} </b> sản phẩm</h2>
+<h2 style="color: #8AA3A0;">We have found <b>{{resultCount}} </b> Product </h2>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of cosmetics">
     <div class="product-item">
@@ -7,10 +7,10 @@
           <img src="{{ cosmetic.Image }}" style="width: 180px;">
         </div>
         <p class="product-item--info">{{ cosmetic.Name }}</p>
-        <p class="product-item--price">{{ cosmetic.Price }} VNĐ</p>
+        <p class="product-item--price">{{ cosmetic.Price }} $/p>
       </div>
       <button class="product-item--add" (click)="addToCart(cosmetic)">
-        Thêm vào giỏ hàng
+        Add to cart
       </button>
     </div>
   </div>

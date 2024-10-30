@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+:root {
+    --default-font-family: 'Montserrat', sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1763px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .shop-celebrate {
+    display: block;
+    position: relative;
+    height: 87px;
+    margin: 51px 0 0 202px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58.512px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 2.4px;
+    z-index: 13;
+  }
+  .clayco-by-you {
+    display: block;
+    position: relative;
+    height: 29px;
+    margin: 765px 0 0 644px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 14;
+  }
+  .truly-unique {
+    display: block;
+    position: relative;
+    height: 39px;
+    margin: 0 0 0 385px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1.6px;
+    z-index: 15;
+  }
+  .design-ceramic-masterpiece {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 463px;
+    height: 87px;
+    margin: 44px 0 0 506px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 16;
+  }
+  .flex-row-ac {
+    position: relative;
+    width: 290px;
+    height: 71px;
+    margin: 32px 0 0 579px;
+    z-index: 19;
+  }
+  .button-go-customize {
+    position: absolute;
+    width: 282px;
+    height: 71px;
+    top: 0;
+    left: 4px;
+    cursor: pointer;
+    background: #000000;
+    border: none;
+    z-index: 18;
+    border-radius: 30px;
+  }
+  .start-customizing {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 290px;
+    height: 30px;
+    top: 23px;
+    left: 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 19;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1322px;
+    height: 309px;
+    margin: 109px 0 0 56px;
+    z-index: 3;
+  }
+  .customized-mug {
+    flex-shrink: 0;
+    position: relative;
+    width: 362px;
+    height: 306px;
+    background: url(../../assets/images/Sample1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 3;
+  }
+  .customized-mug-1 {
+    flex-shrink: 0;
+    position: relative;
+    width: 353px;
+    height: 309px;
+    background: url(../../assets/images/Sample2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 2;
+  }
+  .reserved-for-aria {
+    flex-shrink: 0;
+    position: relative;
+    width: 360px;
+    height: 309px;
+    background: url(../../assets/images/Sample3.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .flex-row-e {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1324px;
+    height: 35px;
+    margin: 19px 0 0 50px;
+    z-index: 11;
+  }
+  .product-name {
+    flex-shrink: 0;
+    position: relative;
+    height: 32px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 5;
+  }
+  .product-name-2 {
+    flex-shrink: 0;
+    position: relative;
+    height: 32px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 8;
+  }
+  .customized-mug-set {
+    flex-shrink: 0;
+    position: relative;
+    height: 32px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 9;
+  }
+  .flex-row-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1021px;
+    height: 28px;
+    margin: -3px 0 0 66px;
+    z-index: 12;
+  }
+  .price {
+    flex-shrink: 0;
+    position: relative;
+    height: 25px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 6;
+  }
+  .price-3 {
+    flex-shrink: 0;
+    position: relative;
+    height: 25px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 9;
+  }
+  .price-4 {
+    flex-shrink: 0;
+    position: relative;
+    height: 25px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 12;
+  }
+  .banner {
+    position: absolute;
+    width: 1440px;
+    height: 689px;
+    top: 182px;
+    left: 0;
+    background: url(../../assets/images/Banner_customize.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 20;
+    /* Adding a dark overlay effect */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust darkness level with opacity */
+    background-blend-mode: overlay;
+    
+    /* Adding blur and shadow */
+    filter: blur(2px); /* Adjust blur intensity */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adding shadow */
+  }
+
+ /* Hover effect for text color and slight scale */
+ .product-name:hover, .product-name-2:hover, .customized-mug-set:hover, 
+ .price:hover, .price-3:hover, .price-4:hover {
+     color: #ff6347; /* Change color on hover */
+     transform: scale(1.05); /* Slightly enlarge the text on hover */
+ }
+ 
+ /* Subtle shadow effect on hover */
+ .product-name:hover, .product-name-2:hover, .customized-mug-set:hover, 
+ .price:hover, .price-3:hover, .price-4:hover {
+     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for a floating effect */
+ }
+ 
+ /* Add a 'bounce' effect when hovered */
+ @keyframes bounce {
+     0%, 100% {
+         transform: scale(1); /* Normal size */
+     }
+     50% {
+         transform: scale(1.1); /* Slightly larger */
+     }
+ }
+ 
+ /* Apply the bounce animation to elements on hover */
+ .product-name:hover, .product-name-2:hover, .customized-mug-set:hover, 
+ .price:hover, .price-3:hover, .price-4:hover {
+     animation: bounce 0.6s ease-in-out; /* Animation duration and easing */
+ }
+ 
+ /* Extra: Underline effect on hover */
+ .product-name::after, .product-name-2::after, .customized-mug-set::after, 
+ .price::after, .price-3::after, .price-4::after {
+     content: "";
+     display: block;
+     width: 0;
+     height: 2px;
+     background-color: #ff6347;
+     transition: width 0.3s ease;
+     position: absolute;
+     bottom: -2px;
+     left: 0;
+ }
+ 
+ /* Expand underline on hover */
+ .product-name:hover::after, .product-name-2:hover::after, .customized-mug-set:hover::after, 
+ .price:hover::after, .price-3:hover::after, .price-4:hover::after {
+     width: 100%;
+ }
+
+/* Basic styling for images */
+.customized-mug, .customized-mug-1, .reserved-for-aria {
+  position: relative;
+  overflow: hidden; /* Ensure elements don't go outside the image borders */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+/* Container hover effect: perspective and depth */
+.customized-mug:hover, .customized-mug-1:hover, .reserved-for-aria:hover {
+  transform: scale(1.1) rotateY(10deg) rotateX(5deg); /* 3D tilt effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+/* Image overlay: subtle color and shine effect */
+.customized-mug::before, .customized-mug-1::before, .reserved-for-aria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* Show overlay on hover */
+.customized-mug:hover::before, .customized-mug-1:hover::before, .reserved-for-aria:hover::before {
+  opacity: 1; /* Make overlay visible */
+}
+
+/* Inner zoom with subtle bounce */
+.customized-mug img, .customized-mug-1 img, .reserved-for-aria img {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center; /* Zoom from the center */
+}
+
+/* Zoom effect on hover */
+.customized-mug:hover img, .customized-mug-1:hover img, .reserved-for-aria:hover img {
+  transform: scale(1.2); /* Inner zoom for more depth */
+  animation: bounce 0.5s ease-in-out; /* Bounce effect on hover */
+}
+
+/* Keyframes for a smooth bounce effect */
+@keyframes bounce {
+  0%, 100% { transform: scale(1.2); }
+  50% { transform: scale(1.25); }
+}

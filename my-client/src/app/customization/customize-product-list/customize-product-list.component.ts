@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Cosmetics } from '../Interfaces/Cosmetic';
-import { CosmeticService } from '../SERVICES/cosmetic.service';
-import { CategoryService } from '../SERVICES/category.service';
+import { Cosmetics } from '../../Interfaces/Cosmetic';
+import { CosmeticService } from '../../SERVICES/cosmetic.service';
+import { CategoryService } from '../../SERVICES/category.service';
 
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  selector: 'app-customize-product-list',
+  templateUrl: './customize-product-list.component.html',
+  styleUrls: ['./customize-product-list.component.css']
 })
-export class CategoryComponent implements OnInit {
+export class CustomizeProductListComponent implements OnInit {
   selectedCategory: string = '';
   categories: any[] | undefined;
   cosmetics: any;
@@ -85,3 +85,4 @@ export class CategoryComponent implements OnInit {
     );
   }
 }
+

@@ -15,27 +15,27 @@
         <div class="admin-info">
             <span class="material-symbols-outlined">notifications</span>
             <span class="admin-name">Admin</span>
-            <img src="assets/admin-avatar.png" class="admin-ava">
+            <img src="assets/Logo_avatar.jpg" class="admin-ava">
         </div>
         <div class="page-title">
-            <p>Quản lý đơn hàng</p>
+            <p>Order management</p>
             <div class="page-search">
-                <input type="search" id="search" placeholder="Tìm kiếm..." />
+                <input type="search" id="search" placeholder="Search..." />
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
         <div class="title__main">
-            Tổng số lượng đơn hàng: {{totalOrder(orders)}} đơn hàng
+            Total number of orders: {{totalOrder(orders)}} orders
         </div>
         <div class="page-body">
             <table class="orders">
                 <thead>
-                    <th>STT</th>
-                    <th>Mã đơn hàng</th>
-                    <th>Tên khách hàng</th>
-                    <th>Ngày tạo</th>
-                    <th>Tổng tiền</th>
-                    <th>Tình trạng</th>
+                    <th>No.</th>
+                    <th>Order ID</th>
+                    <th>Customer's name</th>
+                    <th>Date</th>
+                    <th>Total price</th>
+                    <th>Status</th>
                     <th></th>
                 </thead>
                 <tbody>

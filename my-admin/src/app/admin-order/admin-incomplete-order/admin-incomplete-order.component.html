@@ -14,27 +14,27 @@
         <div class="admin-info">
             <span class="material-symbols-outlined">notifications</span>
             <span class="admin-name">Admin</span>
-            <img src="assets/admin-avatar.png" class="admin-ava">
+            <img src="assets/Logo_avatar.jpg" class="admin-ava">
         </div>
         <div class="page-title">
-            <p>Danh sách đơn hàng chưa xác nhận</p>
+            <p>List of unconfirmed orders</p>
             <div class="page-search">
-                <input type="search" id="search" placeholder="Tìm kiếm..." />
+                <input type="search" id="search" placeholder="Search..." />
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
         <div class="title__main">
-            Đơn hàng: {{totalOrder(orders)}} đơn hàng đang chờ
+            Order: {{totalOrder(orders)}} Pending orders
         </div>
         <div class="page-body">
             <table id="unorders">
                 <thead>
-                    <th>STT</th>
-                    <th>Mã đơn hàng</th>
-                    <th>Tên khách hàng</th>
-                    <th>Ngày tạo </th>
-                    <th>Tổng tiền</th>
-                    <th>Tình trạng</th>
+                    <th>No.</th>
+                    <th>Order ID</th>
+                    <th>Customer's name</th>
+                    <th>Date</th>
+                    <th>Total price</th>
+                    <th>Status</th>
                     <th></th>
                 </thead>
                 <tbody>
@@ -52,10 +52,10 @@
                                 <span class="material-icons-outlined">visibility</span>
                             </button>
                             <button id="check" (click)="orderConfirm(order._id)">
-                                <span class="material-icons-outlined" style="color:#2D982A">check_circle</span>
+                                <span class="material-icons-outlined" style="color:#8AA3A0">check_circle</span>
                             </button>
                             <button id="cancel" (click)="deleteOrder(order._id)">
-                                <span class="material-icons-outlined" style="color:red">cancel</span>
+                                <span class="material-icons-outlined" style="color:#ff6347">cancel</span>
                             </button>
                         </td>
                     </tr>

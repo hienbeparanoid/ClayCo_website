@@ -13,7 +13,7 @@
     background: linear-gradient(135deg, #8AA3A0, #8AA3A0);
     top: 0;
     left: 0;
-    width: 15%;
+    width: 16%;
     height: 100%;
     padding: 20px 0;
     color: #FFFFFF;
@@ -26,7 +26,7 @@
 }
 
 .nav__title img {
-    border-radius: 10px;
+    border-radius: 0px;
     max-width: 70%;
     height: auto;
     display: block;

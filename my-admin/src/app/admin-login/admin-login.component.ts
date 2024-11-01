@@ -15,12 +15,12 @@ export class AdminLoginComponent {
 
   onSubmit(): void {
     // Kiểm tra tài khoản và mật khẩu nhập vào có đúng hay không
-    if (this.username === 'Beaurity Admin' && this.password === '68686868') {
+    if (this.username === 'ClayCo admin' && this.password === 'clayco369') {
       // Nếu đúng, chuyển hướng đến trang quản trị
       this.router.navigate(['admin-home']);
     } else {
       // Nếu sai, hiển thị thông báo lỗi
-      this.error = 'Kiểm tra lại tên đăng nhập hoặc password';
+      this.error = 'Please check your username or password again';
     }
   }
 }

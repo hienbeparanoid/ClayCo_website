@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     font-size: 15px;
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 @media (max-width: 768px) {
     .main {
@@ -101,14 +103,14 @@
 .page-title p {
     font-weight: bold;
     font-size: 35px !important;
-    color: #2D982A;
+    color: #8AA3A0;
     margin: 0;
     padding: 0;
 }
 .page-search{
     color: #f2f2f2;
     border-radius: 25px;
-    border: 1px solid #2D982A;
+    border: 1px solid #8AA3A0;
     padding: 0px 10px;
     display: flex;
     flex-direction: row;
@@ -176,7 +178,7 @@
 }
 
 #point {
-    color: #2D982A;
+    color: #8AA3A0;
     font-weight: bold;
 }
 
@@ -249,11 +251,11 @@
 }
 
 .order-status button:hover {
-    background-color: #CEEFCD;
+    background-color: #e6f3f1;
 }
 
 .order-status button.active {
-    background-color: #91D88E;
+    background-color: #aeefe5;
 }
 
 .tab_status {
@@ -361,11 +363,11 @@
 }
 
 .cancelled {
-    background-color: rgb(226, 81, 81);
+    background-color: #ff6347;
 }
 
 .completed {
-    background-color: #52b54f;
+    background-color: #8AA3A0;
 }
 
 .delivering {

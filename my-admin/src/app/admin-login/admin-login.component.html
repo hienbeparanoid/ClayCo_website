@@ -2,10 +2,10 @@
   <div class="form">
       <img class="logo" src="assets/images/Logo (1).png" alt="Logo" width="40%"/>
       <form class="login-form" (ngSubmit)="onSubmit()">
-          <h2>ĐĂNG NHẬP ADMIN</h2>
-          <input type="text" name="username" placeholder="Tên đăng nhập *" [(ngModel)]="username" required />
-          <input type="password" name="password" placeholder="Mật khẩu *" [(ngModel)]="password" required />
-          <button type="submit">ĐĂNG NHẬP</button>
+          <h2>ADMIN LOGIN</h2>
+          <input type="text" name="username" placeholder="USERNAME *" [(ngModel)]="username" required />
+          <input type="password" name="password" placeholder="PASSWORD *" [(ngModel)]="password" required />
+          <button type="submit">LOGIN</button>
           <div class="error-msg" *ngIf="error">{{ error }}</div>
       </form>
   </div>

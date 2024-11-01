@@ -64,7 +64,7 @@ export class AdminCaterogyComponent {
   }
 
   deleteCategory(_id: any) {
-    if (window.confirm('Bạn có chắc muốn xóa danh mục này?')) {
+    if (window.confirm('Are you sure to delete this category?')) {
       this._service.deleteCategory(_id).subscribe({
         next: () => {
           // Reload the page after deleting the category

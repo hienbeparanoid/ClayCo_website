@@ -30,22 +30,22 @@ export class ForgotPasswordComponent implements OnInit {
 
   sendCode() {
     if (!this.isPhoneNumberValid) {
-      alert('Vui lòng nhập đúng số điện thoại!');
+      alert('Please enter the correct phone number!');
     } else if (this.phoneNumber.trim().length === 0) {
-      alert('Vui lòng nhập số điện thoại!');
+      alert('Please enter the phone number!');
     } else {
       this.accountService.checkPhoneNumberExist(this.phoneNumber).subscribe({
         next: (data) => {
           this.phoneNumbers = data;
           if (this.phoneNumbers.phonenumber == this.phoneNumber) {
-            alert('Gửi mã thành công!');
+            alert('Sent successfully!');
           } else {
-            alert('Số điện thoại không tồn tại!');
+            alert('Phone number is unavailable!');
           }
         },
         error: (err) => {
           this.errorMessage = err;
-          alert('Lỗi trong quá trình gửi mã!');
+          alert('Error in the send process!');
         }
       });
     }

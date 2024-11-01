@@ -49,10 +49,10 @@ export class SignUpComponent {
 
   postAccount(): void {
     if (!this.isPhoneNumberValid) {
-      alert('Vui lòng nhập đúng số điện thoại!');
+      alert('Please enter a valid phone number!');
       return;
     } else if (!this.isValidEmail) {
-      alert('Vui lòng nhập đúng email!');
+      alert('Please enter a valid email!');
       return;
     } else if (
       this.account.phonenumber.trim().length === 0 ||
@@ -63,20 +63,20 @@ export class SignUpComponent {
       this.account.Address.trim().length === 0 ||
       !this.account.agreement 
     ) {
-      alert('Vui lòng nhập đủ thông tin bắt buộc');
+      alert('Please fill in all required fields.');
       return;
     } else if (this.account.password !== this.confirmPassword) {
-      alert('Mật khẩu không khớp');
+      alert('Password does not match.');
       return;
     } else {
       this._service.postAccount(this.account).subscribe({
         next: (data) => {
           this.account = data;
-          alert('Đăng ký thành công');
+          alert('Sign up successfully');
           this.router.navigate(['/app-login']);
         },
         error: (err) => {
-          alert('Đã xảy ra lỗi');
+          alert('Error');
         }
       });
     }

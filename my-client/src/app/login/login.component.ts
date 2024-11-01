@@ -75,7 +75,7 @@ export class LoginComponent implements OnInit {
         },
         (error) => {
           // Thông báo lỗi
-          alert('Đăng nhập không thành công!');
+          alert('Login failed!');
         }
       );
     }

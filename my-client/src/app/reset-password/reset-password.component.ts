@@ -51,7 +51,7 @@ export class ResetPasswordComponent implements OnInit {
       this.passwordInput.value = true;
       return;
     } else if (this.password.length < 6) {
-      alert('Mật khẩu phải từ 6 kí tự trở lên');
+      alert('Password must be at least 6 characters long');
       this.passwordChanged = false;
       return;
     }
@@ -65,7 +65,7 @@ export class ResetPasswordComponent implements OnInit {
     if (this.confirmPassword.trim().length === 0) {
       this.confirmPasswordInput.value = true;
     } else if (passwordInput.value !== confirmPasswordInput.value) {
-      alert('Mật khẩu không khớp');
+      alert('Password does not match.');
       this.passwordChanged = false;
       return;
     }
@@ -87,11 +87,11 @@ export class ResetPasswordComponent implements OnInit {
       })
       .catch((error: any) => {
         console.error(error);
-        alert('Đã xảy ra lỗi khi thay đổi mật khẩu. Vui lòng thử lại sau.');
+        alert('An error occurred while changing the password. Please try again later.');
       });
       // Kiểm tra xem mật khẩu đã được thay đổi thành công hay chưa
     if (this.passwordChanged) {
-      alert('Đổi mật khẩu thành công');
+      alert('Reset password successfully');
     }
   }
 }

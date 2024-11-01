@@ -120,7 +120,7 @@ export class CartComponent implements OnInit {
     this._service.addToCart(cos).subscribe(
       (response: any) => {
         console.log(response);
-        alert("Thêm sản phẩm vào giỏ hàng thành công");
+        alert("Product added to cart successfully");
         window.location.reload();
         // Thêm sản phẩm vào giỏ hàng thành công
       },
@@ -132,11 +132,11 @@ export class CartComponent implements OnInit {
   }
 
   removeFromCart(cosId: any) {
-    if(window.confirm("Bạn chắc chắn muốn xóa khỏi giỏ hàng?")){
+    if(window.confirm("Are you sure you want to remove this from the cart?")){
       this._service.removeFromCart(cosId).subscribe(
         (response: any) => {
           console.log(response);
-          alert("Xóa sản phẩm khỏi giỏ hàng thành công");
+          alert("Product removed from cart successfully");
           window.location.reload();
           // Xóa sản phẩm khỏi giỏ hàng thành công
         },
@@ -152,7 +152,7 @@ export class CartComponent implements OnInit {
     if(this.currentUser != null){
       // Kiểm tra xem có mục nào được chọn không
       if(this.selectedItems.length === 0){
-        alert('Vui lòng chọn sản phẩm để thanh toán giỏ hàng');
+        alert('Please select a product to proceed with checkout.');
         return;
       }
       const navigationExtras: NavigationExtras = {

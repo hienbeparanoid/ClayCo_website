@@ -120,4 +120,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
     }
     return randomIndices.map(index => sourceCosmetics?.[index]);
   }
+
+  browseProduct() {
+    this.router.navigate(['/app-category']);
+  }
+
+  toCustomize() {
+    this.router.navigate(['/app-customization']);
+  }
 }

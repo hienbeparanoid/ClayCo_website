@@ -18,7 +18,7 @@
       <a class="bold">The Essence of Ceramic Art, Flowers, and Greenery</a>
         <p>"Where ceramic artistry meets fresh blooms and lush greenery for a serene, sustainable lifestyle."</p>
     </div>
-    <button id="explorecollect" >Explore our collection of gorgeous products &nbsp; &nbsp;<i class="fas fa-arrow-right"></i></button>
+    <button id="explorecollect" (click)="browseProduct()">Explore our collection of gorgeous products &nbsp; &nbsp;<i class="fas fa-arrow-right"></i></button>
   </div>
 <div #scrollArrow id="scroll-arrow" class="scroll-arrow" (click)="scrollToNextSection()">
   <i class="fas fa-arrow-down"></i>
@@ -31,7 +31,7 @@
   <a class="bold" style="color: black;">CLAYCO PRODUCTS</a>
   <a class="button" id="product">
     <a routerLink="/app-category">
-      <button type="submit">View all</button>
+      <button type="submit" (click)="addToCart(cosmetic)">View all</button>
     </a>
   </a>
   <br />
@@ -46,7 +46,7 @@
           <img src="{{ cosmetic.Image }}" style="width: 180px;">
         </div>
         <p class="product-item--info">{{ cosmetic.Name }}</p>
-        <p class="product-item--price">{{ cosmetic.Price }} VNĐ</p>
+        <p class="product-item--price">{{ cosmetic.Price }} $</p>
       </div>
       <button class="product-item--add" (click)="addToCart(cosmetic)">Add to cart</button>
     </div>
@@ -63,9 +63,9 @@
           <img src="{{ cosmetic.Image }}" style="width: 180px;">
         </div>
         <p class="product-item--info">{{ cosmetic.Name }}</p>
-        <p class="product-item--price">{{ cosmetic.Price }} VNĐ</p>
+        <p class="product-item--price">{{ cosmetic.Price }} $</p>
       </div>
-      <button class="product-item--add" (click)="addToCart(cosmetic)">Thêm vào giỏ hàng</button>
+      <button class="product-item--add" (click)="addToCart(cosmetic)">Add to cart</button>
     </div>
   </div>
   <br />
@@ -106,7 +106,7 @@
           <img src="assets/images/customization.png" alt="Customization Service">
           <h3 class="service-title" #typingEffect>CUSTOMIZATION </h3>
           <p class="service-description">Craft a personalized masterpiece that is uniquely yours, designed to reflect your style and individuality.</p>
-          <button class="service-button" style="font-size: 18px; font-weight: bold; cursor: pointer; color: #ffffff; background-color: black;">Customize Now</button>
+          <button class="service-button" (click)="toCustomize()" style="font-size: 18px; font-weight: bold; cursor: pointer; color: #ffffff; background-color: black;">Customize Now</button>
         </div>
         <div class="service-item">
           <img src="assets/images/workshop.png" alt="Workshop">

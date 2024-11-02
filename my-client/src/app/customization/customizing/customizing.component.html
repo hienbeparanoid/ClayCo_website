@@ -4,8 +4,13 @@
       <div class="crush-stone-mug"></div>
       <span class="special-touch">Add your special touch, type your text!</span>
       <div class="line"></div>
-      <input type="text" class="text-input" [(ngModel)]="inputText" (input)="updateWordCount()" placeholder="Type here" />
-      <span class="word-count">{{ wordCount }}/6 words</span>
+      <input
+        type="text"
+        class="text-input"
+        maxlength="30"
+        placeholder="Type here"
+      />
+      <span class="word-count">6 words</span>
       <span class="inspiration"
         >Or wanna show us your inspiration, upload an image!</span>
         <button class="upload-button" (click)="triggerFileInput()">
@@ -25,7 +30,7 @@
         </select>
     </div>
       <span class="special-details">Any special details?</span>
-      <textarea class="rectangle" [(ngModel)]="specialDetails" placeholder="Enter special details here"></textarea>
+      <textarea class="rectangle" placeholder="Enter special details here"></textarea>
       <button class="button-customize" (click)="addToCart(cosmetic)">
         <span class="finish-add-cart">Finish and add to cart</span>
       </button>

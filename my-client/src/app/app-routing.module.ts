@@ -26,10 +26,10 @@ import { CustomizationComponent } from './customization/customization.component'
 import { CustomizeProductListComponent } from './customization/customize-product-list/customize-product-list.component';
 import { CustomizeProductDetailComponent } from './customization/customize-product-detail/customize-product-detail.component';
 import { CustomizingComponent } from './customization/customizing/customizing.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
+import { AboutUsComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
-  { path: "app-aboutus", component: AboutusComponent },
+  { path: "app-aboutus", component: AboutUsComponent},
   { path: "", component: HomeComponent },
   { path: "app-home", component: HomeComponent },
   { path: "app-cart", component: CartComponent },

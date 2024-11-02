@@ -31,7 +31,7 @@ import { DealsComponent } from './deals/deals.component';
 import { CustomizationComponent } from './customization/customization.component';
 import { CustomizeProductListComponent } from './customization/customize-product-list/customize-product-list.component';
 import { CustomizeProductDetailComponent } from './customization/customize-product-detail/customize-product-detail.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
+import { AboutUsComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     CustomizationComponent,
     CustomizeProductListComponent,
     CustomizeProductDetailComponent,
-    AboutusComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -69,6 +69,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    AboutUsComponent
   ],
   providers: [AccountcustomerService],
   bootstrap: [AppComponent, LoginComponent]

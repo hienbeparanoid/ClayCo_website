@@ -29,7 +29,6 @@ import { CustomizingComponent } from './customization/customizing/customizing.co
 import { AboutUsComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
-  { path: "app-aboutus", component: AboutUsComponent},
   { path: "", component: HomeComponent },
   { path: "app-home", component: HomeComponent },
   { path: "app-cart", component: CartComponent },
@@ -58,7 +57,8 @@ const routes: Routes = [
   { path: "app-customization", component: CustomizationComponent },
   { path: 'customize-product-list', component: CustomizeProductListComponent },
   { path: 'customize-product-detail', component: CustomizeProductDetailComponent },
-  { path: 'customizing', component: CustomizingComponent }
+  { path: 'customizing', component: CustomizingComponent },
+  { path: 'aboutus', component: AboutUsComponent },
 ];
 
 @NgModule({

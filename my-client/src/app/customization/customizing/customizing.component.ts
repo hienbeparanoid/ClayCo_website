@@ -4,17 +4,22 @@ import { Cosmetics } from '../../Interfaces/Cosmetic';
 import { CosmeticService } from '../../SERVICES/cosmetic.service';
 import { CategoryService } from '../../SERVICES/category.service';
 
+
 @Component({
-  selector: 'app-customize-product-detail',
-  templateUrl: './customize-product-detail.component.html',
-  styleUrls: ['./customize-product-detail.component.css']
+  selector: 'app-customizing',
+  templateUrl: './customizing.component.html',
+  styleUrls: ['./customizing.component.css']
 })
-export class CustomizeProductDetailComponent {
+export class CustomizingComponent implements OnInit {
   selectedCategory: string = '';
   categories: any[] | undefined;
   cosmetics: any;
   cosmetic = new Cosmetics();
   errMessage: string = '';
+  inputText: string = '';
+  wordCount: number = 0;
+  uploadNotification: string = '';
+  specialDetails: string = '';
 
   constructor(
     public _service: CosmeticService,
@@ -54,8 +59,26 @@ export class CustomizeProductDetailComponent {
       },
     });
   }
+
   selectCategory(category: string): void {
     this.selectedCategory = category;
+  }
+
+  updateWordCount() {
+    this.wordCount = this.inputText.split(/\s+/).filter(word => word.length > 0).length;
+  }
+
+  triggerFileInput() {
+    const fileInput = document.getElementById('fileInput') as HTMLInputElement;
+    fileInput.click();
+  }
+
+  handleFileUpload(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      console.log(`File uploaded: ${file.name}`);
+      this.uploadNotification = `Uploaded: ${file.name}`;
+    }
   }
 
   addToCart(cos: any): void {
@@ -72,9 +95,5 @@ export class CustomizeProductDetailComponent {
         // Xảy ra lỗi khi thêm sản phẩm vào giỏ hàng
       }
     );
-  }
-
-  goToCustomizing() {
-    this.router.navigate(['/customizing']);
   }
 }

@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif; 
+}
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1122px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .donec-mug {
+    display: block;
+    position: relative;
+    height: 54px;
+    margin: 130px 0 0 56px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.008px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .price {
+    display: block;
+    position: relative;
+    height: 25px;
+    margin: 0 0 0 66px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 2;
+  }
+  .flex-row-ec {
+    position: relative;
+    width: 1348px;
+    height: 740px;
+    margin: 38px 0 0 45px;
+    z-index: 21;
+  }
+  .crush-stone-mug {
+    position: absolute;
+    width: 886px;
+    height: 740px;
+    top: 0;
+    left: 0;
+    background: url(../../../assets/images/product_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 21;
+    border-radius: 10px;
+  }
+  .special-touch {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 375px;
+    height: 57px;
+    top: 0;
+    left: 948px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    letter-spacing: 1px;
+    z-index: 3;
+  }
+  .word-count {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    top: 83px;
+    left: 1278px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13.409px;
+    text-align: left;
+    letter-spacing: 0.55px;
+    z-index: 20;
+  }
+  /* .line {
+    position: absolute;
+    width: 392.005px;
+    height: 3px;
+    top: 102.018px;
+    left: 942.998px;
+    background: url(../../../assets/images/line_black.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 19;
+  } */
+  .inspiration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 381px;
+    height: 57px;
+    top: 132px;
+    left: 946px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    letter-spacing: 1px;
+    z-index: 4;
+  }
+  .upload-button {
+    position: absolute;
+    width: 396px;
+    height: 121px;
+    top: 203px;
+    left: 940px;
+    cursor: pointer;
+    background: #8aa3a0;
+    border: none;
+    z-index: 13;
+    border-radius: 10px;
+  }
+  .outlined-suggested-circle {
+    position: relative;
+    width: 49px;
+    height: 47px;
+    margin: 29px 0 0 185px;
+    background: url(../../../assets/images/upload_image.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .drag-and-drop-here {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 151px;
+    height: 36px;
+    margin: 9px 0 0 142px;
+    color: #d9d9d9;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.628px;
+    text-align: left;
+    letter-spacing: 0.6px;
+    z-index: 14;
+  }
+  .choose-the-position {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 36px;
+    top: 354px;
+    left: 947px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 5;
+  }
+  .droplist-position {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    top: 399px;
+    left: 945px;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    z-index: 9;
+    border-radius: 10px;
+  }
+  .position {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 3px;
+    left: 16px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 18;
+  }
+  .outlined-directions-chevron {
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: 5px;
+    left: 339px;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .vector {
+    position: relative;
+    width: 15.5px;
+    height: 7.75px;
+    margin: 7.625px 0 0 5.75px;
+    background: url(../../../assets/images/dropdown_button.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 11;
+  }
+  .special-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 36px;
+    top: 464px;
+    left: 942px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 6;
+  }
+  .rectangle {
+    position: absolute;
+    width: 390px;
+    height: 108px;
+    top: 500px;
+    left: 947px;
+    background: #ffffff;
+    border: 2px solid #8aa3a0;
+    z-index: 8;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .button-customize {
+    position: absolute;
+    width: 411px;
+    height: 75px;
+    top: 636px;
+    left: 924px;
+    cursor: pointer;
+    background: #000000;
+    border: none;
+    z-index: 16;
+    border-radius: 30px;
+  }
+  .finish-add-cart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 324px;
+    height: 40px;
+    top: 18px;
+    left: 46px;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.256px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.2px;
+    z-index: 17;
+  }
+  .button-customize-1 {
+    position: relative;
+    width: 430px;
+    height: 75px;
+    margin: -1px 0 0 965px;
+    cursor: pointer;
+    background: #d9d9d9;
+    border: none;
+    z-index: 7;
+    border-radius: 30px;
+  }
+  .other-requirements {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 391px;
+    height: 50px;
+    top: 13px;
+    left: 25px;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    letter-spacing: 1px;
+    z-index: 7;
+  }
+  
+    .text-input {
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid #000; /* Đường gạch ngang */
+    background: none;
+    width: 392.005px; /* Độ rộng ô input */
+    max-width: 400px; /* Tùy chỉnh lại theo ý */
+    font-size: 16px; /* Tùy chỉnh kích cỡ chữ */
+    padding: 5px 0;
+    color: #000;
+    outline: none; /* Loại bỏ viền outline khi click vào */
+    top: 70px;
+    left: 942.998px;
+}
+
+.text-input::placeholder {
+    color: #999; /* Màu placeholder nhạt hơn */
+    font-size: 14px;
+}
+
+.upload-notification {
+  display: block;
+  margin-top: 10px;
+  color: #8aa3a0;
+}
+
+.dropdown-checkbox {
+  display: none;
+}
+
+/* Label styling */
+.position-label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Chevron icon */
+.outlined-directions-chevron {
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+  border: solid #666;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Container for dropdown */
+.droplist-position {
+  width: 390px;
+}
+
+/* Style the select element */
+.position-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  appearance: none; /* Remove default arrow for custom styling */
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #8aa3a0; 
+  border-radius: 10px;
+}
+
+/* Optional: Style for custom dropdown arrow */
+.position-select::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}

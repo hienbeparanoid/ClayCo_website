@@ -64,8 +64,8 @@ export class CustomizingComponent implements OnInit {
     this.selectedCategory = category;
   }
 
-  updateWordCount() {
-    this.wordCount = this.inputText.split(/\s+/).filter(word => word.length > 0).length;
+  updateWordCount(inputValue: string): void {
+    this.wordCount = inputValue.split(' ').length;
   }
 
   triggerFileInput() {

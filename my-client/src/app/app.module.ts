@@ -31,7 +31,6 @@ import { DealsComponent } from './deals/deals.component';
 import { CustomizationComponent } from './customization/customization.component';
 import { CustomizeProductListComponent } from './customization/customize-product-list/customize-product-list.component';
 import { CustomizeProductDetailComponent } from './customization/customize-product-detail/customize-product-detail.component';
-import { CustomizingComponent } from './customization/customizing/customizing.component';
 
 
 @NgModule({
@@ -62,7 +61,6 @@ import { CustomizingComponent } from './customization/customizing/customizing.co
     CustomizationComponent,
     CustomizeProductListComponent,
     CustomizeProductDetailComponent,
-    CustomizingComponent,
   ],
   imports: [
     BrowserModule,

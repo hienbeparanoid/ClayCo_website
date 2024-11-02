@@ -1,44 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<BODY>
 <!--SECTION 1-->
-<div class="home_banner">
+<div class="home_banner" style="width:2000px;">
   <div>
     <a>&nbsp;</a>
   </div>
   <div class="bar">
-    <a><img src="assets/images/bar.png"></a>
+    
   </div>
   <div>
     <a>&nbsp;</a>
   </div>
   <div class="content">
-    <a>&nbsp;</a>
-    <a class="bold">CLAYCO WEBSITE</a>
-    <a class="bold">LOVE YOU</a>
-    <p style="font-size: 18px;" align="justify">Tại Việt Nam, thực vật đặc biệt là lá cây hết sức phong phú, nếu chúng
-      ta biết cách đưa chúng vào sử dụng trong mỹ phẩm thuần chay thì sẽ giúp được người nông dân kiếm thêm được thu
-      nhập, nâng cao chất lượng nông sản của họ và nâng cao giá trị của mỹ phẩm Việt. Đó là lý do thôi thúc BEAURITY
-      nghiên cứu và cho ra đời những sản phẩm làm đẹp từ lá cây với 90% có nguồn gốc từ các hộ nông dân Việt Nam, an
-      toàn, lành tính, không sử dụng thành phần từ động vật và nói không với thử nghiệm trên động vật, có thể áp dụng
-      trên da của mọi lứa tuổi.</p>
+    <div class="text-container">
+      <a class="bold" style="font-weight: 700; font-size: 2em;">CLAYCO.</a>
+      <a class="bold">The Essence of Ceramic Art, Flowers, and Greenery</a>
+        <p>"Where ceramic artistry meets fresh blooms and lush greenery for a serene, sustainable lifestyle."</p>
+    </div>
+    <button id="explorecollect" >Explore our collection of gorgeous products &nbsp; &nbsp;<i class="fas fa-arrow-right"></i></button>
   </div>
-  <div class="image-container">
-    <img src="assets/images/xanhnhula.png" style="width: 350px;">
-  </div>
+<div #scrollArrow id="scroll-arrow" class="scroll-arrow" (click)="scrollToNextSection()">
+  <i class="fas fa-arrow-down"></i>
+</div>
 </div>
 
 <!--SECTION 2-->
 <div class="sanpham">
   <br />
-  <a class="bold">SẢN PHẨM BEAURITY</a>
+  <a class="bold" style="color: black;">CLAYCO PRODUCTS</a>
   <a class="button" id="product">
     <a routerLink="/app-category">
-      <button type="submit">Xem tất cả</button>
+      <button type="submit">View all</button>
     </a>
   </a>
   <br />
 </div>
 
 <!--SECTION 3-->
-<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">SẢN PHẨM MỚI</p>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of cosmetics | slice:0:5">
     <div class="product-item">
@@ -49,13 +48,13 @@
         <p class="product-item--info">{{ cosmetic.Name }}</p>
         <p class="product-item--price">{{ cosmetic.Price }} VNĐ</p>
       </div>
-      <button class="product-item--add" (click)="addToCart(cosmetic)">Thêm vào giỏ hàng</button>
+      <button class="product-item--add" (click)="addToCart(cosmetic)">Add to cart</button>
     </div>
   </div>
 </div>
 
 <!--SECTION 4-->
-<p style="font-weight: bold; font-size: 30px; color: #2D982A; text-align: center;">SẢN PHẨM NỔI BẬT</p>
+<p style="font-weight: bold; font-size: 30px; color: BLACK; text-align: center;">TOP-SELLER PRODUCTS</p>
 <div class="danhmucproduct">
   <div class="product" *ngFor="let cosmetic of randomFeaturedCosmetics">
     <div class="product-item">
@@ -75,60 +74,66 @@
 <!--SECTION 5-->
 <div class="feedback">
   <br />
-  <a class="bold">FEEDBACK KHÁCH HÀNG</a>
+  <a class="bold" style="color:black">CUSTOMER FEEDBACK</a>
   <br />
   <div class="feedbackdetails">
     <div></div>
     <div class="image-container">
-      <a><img src="assets/images/fb1.png" style="width: 400px;"></a>
+      <a><img src="assets/images/plantfb.jpg" style="width: 400px; height:300px"></a>
     </div>
     <div></div>
     <div align="justify">
       <br />
-      <a>Với giá thành phù hợp với túi tiền của phần đông khách hàng, chất lượng sản phẩm tốt, được sản xuất hoàn toàn
-        trong nước, Beaurity xứng đáng là một trong những thương hiệu Việt đang góp phần đưa mĩ phẩm Việt dần thu hẹp
-        khoảng cách với thị trường mĩ phẩm trên thế giới. Ngoài chất lượng tốt, giá tiền hợp lý, mình còn rất trân
-        trọng những nỗ lực mà hãng cố gắng đưa đến cho cộng đồng, nhất là trong vấn đề bảo vệ môi trường, sống xanh và
-        mỹ phẩm thuần chay không thử nghiệm trên động vật.</a>
-    </div>
+      <a style="line-height: 1.6; display: block; text-align: justify;">
+        With affordable prices that suit the budget of most customers, high-quality products made entirely in Vietnam, Beaurity deserves to be one of the Vietnamese brands that are helping to close the gap with the global cosmetics market. In addition to good quality and reasonable prices, I greatly appreciate the brand's efforts to contribute to the community, especially in matters of environmental protection, green living, and vegan cosmetics that are not tested on animals.
+        <br>
+        <BR>
+        <span style="font-style: italic;">David Nguyen | CEO of Star Sky Company</span>
+      </a>
+        </div>
     <div></div>
   </div>
   <br />
 </div>
 
-<!--SECTION 6-->
-<div id="chungnhanAnToan" class="chungnhan" name="chungnhan">
-  <br />
-  <a class="bold">CHỨNG NHẬN AN TOÀN</a>
-  <div class="chungnhandetail">
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/leaping_bunny.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">Leaping Bunny</b>
-      <b>CHƯƠNG TRÌNH LEAPING BUNNY</b>
-      <p align="justify">Chương trình Leaping Bunny của tổ chức Cruelty Free International được xem là "tiêu chuẩn
-        vàng" toàn cầu cho
-        các sản phẩm không thử nghiệm trên động vật.</p>
+<!--SECTION 6: Redesigned-->
+<div class="main-container">
+  <div class="shipping-handling">
+    <div class="our-services">
+      <h2 class="section-title">OUR SERVICES</h2>
+      <div class="service-container">
+        <div class="service-item">
+          <img src="assets/images/customization.png" alt="Customization Service">
+          <h3 class="service-title" #typingEffect>CUSTOMIZATION </h3>
+          <p class="service-description">Craft a personalized masterpiece that is uniquely yours, designed to reflect your style and individuality.</p>
+          <button class="service-button" style="font-size: 18px; font-weight: bold; cursor: pointer; color: #ffffff; background-color: black;">Customize Now</button>
+        </div>
+        <div class="service-item">
+          <img src="assets/images/workshop.png" alt="Workshop">
+          <h3 class="service-title" #workshopTypingEffect>WORKSHOP</h3>
+          <p class="service-description">Unleash your creativity at our workshops, where you'll craft one-of-a-kind products that reflect your unique style and passion.</p>
+          <button class="service-button" style="font-size: 18px; font-weight: bold; cursor: pointer; color: #ffffff; background-color: black;">Join Now</button>
+        </div>
+      </div>
     </div>
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/vegan_society.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">The Vegan Society</b>
-      <b>HIỆP HỘI THUẦN CHAY QUỐC TẾ</b>
-      <p align="justify">The Vegan Society (Hiệp hội thuần chay quốc tế) là một trong những chứng nhận uy tín xác thực
-        cho các sản phẩm
-        không có thành phần từ động vật và không thử nghiệm trên động vật.</p>
-    </div>
-    <div>&nbsp;</div>
-    <div class="content">
-      <a><img src="assets/images/Peta.svg" style="width: 120px;"></a>
-      <b style="font-size: 20px;">PETA</b>
-      <b>ANIMAL TEST-FREE & VEGAN</b>
-      <p align="justify">Chương trình Beauty Without Bunnies của tổ chức bảo vệ quyền lợi động vật toàn cầu PETA là
-        chương trình bảo vệ
-        và cam kết không có sự tàn ác đối với động vật uy tín trên thế giới.</p>
-    </div>
-    <div>&nbsp;</div>
-    <br />
+    <div class="service-values">
+      <div class="value-item">
+          <i class="fas fa-shipping-fast icon-style"></i>
+          <h3 class="value-title" style="color: #000000;">Free & Fast Delivery</h3>
+          <p class="value-description">Enjoy free delivery for all orders over $100.</p>
+      </div>
+      <div class="value-item">
+          <i class="fas fa-headset icon-style"></i>
+          <h3 class="value-title" style="color: #000000;">24/7 Customer Service</h3>
+          <p class="value-description">Friendly support available anytime you need.</p>
+      </div>
+      <div class="value-item">
+        <i class="fas fa-shield-alt icon-style"></i>
+        <h3 class="value-title" style="color: #000000;">Money Back Guarantee</h3>
+          <p class="value-description">Easy returns within 30 days if you are not satisfied.</p>
+      </div>
   </div>
+  
 </div>
+
+

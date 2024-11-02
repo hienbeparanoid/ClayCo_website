@@ -12,7 +12,7 @@
     background-color: #8AA3A0;
     color: white;
     bottom: 0;
-    width: 100%;
+    width: 1440;
 }
 
 .material-symbols-outlined{
@@ -279,17 +279,21 @@
     gap: 12px;
     position: relative;
     width: 349px;
-    padding: 12px 16px 12px 16px;
+    padding: 12px 16px;
     cursor: pointer;
-    background: #ffffff;
+    background: black;
     border: none;
     z-index: 6;
     overflow: hidden;
     border-radius: 62px;
+    transition: transform 0.3s ease; /* Thêm transition để mượt mà */
   }
+  
   .submit-button:hover {
-    background-color: #a2b9b5;
+    transform: scale(1.05); /* Phóng to lên 5% khi hover */
   }
+  
+
   .newsletter-text {
     flex-shrink: 0;
     flex-basis: auto;

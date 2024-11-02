@@ -24,6 +24,8 @@ import { SignupOtpComponent } from './sign-up/signup-otp/signup-otp.component';
 import { DealsComponent } from './deals/deals.component';
 import { CustomizationComponent } from './customization/customization.component';
 import { CustomizeProductListComponent } from './customization/customize-product-list/customize-product-list.component';
+import { CustomizeProductDetailComponent } from './customization/customize-product-detail/customize-product-detail.component';
+import { CustomizingComponent } from './customization/customizing/customizing.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -52,7 +54,9 @@ const routes: Routes = [
   { path: "app-signup-otp", component: SignupOtpComponent },
   { path: "app-xmasdeals", component: DealsComponent},
   { path: "app-customization", component: CustomizationComponent },
-  { path: 'customize-product-list', component: CustomizeProductListComponent }
+  { path: 'customize-product-list', component: CustomizeProductListComponent },
+  { path: 'customize-product-detail', component: CustomizeProductDetailComponent },
+  { path: 'customizing', component: CustomizingComponent }
 ];
 
 @NgModule({

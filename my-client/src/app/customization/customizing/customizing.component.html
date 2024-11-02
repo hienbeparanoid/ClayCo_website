@@ -1,0 +1,40 @@
+<div class="main-container">
+    <span class="donec-mug">Donec mug</span><span class="price">$ 30</span>
+    <div class="flex-row-ec">
+      <div class="crush-stone-mug"></div>
+      <span class="special-touch">Add your special touch, type your text!</span>
+      <div class="line"></div>
+      <input type="text" class="text-input" [(ngModel)]="inputText" (input)="updateWordCount()" placeholder="Type here" />
+      <span class="word-count">{{ wordCount }}/6 words</span>
+      <span class="inspiration"
+        >Or wanna show us your inspiration, upload an image!</span>
+        <button class="upload-button" (click)="triggerFileInput()">
+          <div class="outlined-suggested-circle"></div>
+          <span class="drag-and-drop-here">Choose your image</span>
+        </button>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;" (change)="handleFileUpload($event)">
+        <span class="upload-notification">{{ uploadNotification }}</span>
+      <span class="choose-the-position">Choose the position</span>
+      <div class="droplist-position">
+        <select class="position-select">
+            <option selected>In front of the item</option>
+            <option>Behind the item</option>
+            <option>Above the item</option>
+            <option>Below the item</option>
+            <option>Custom position</option>
+        </select>
+    </div>
+      <span class="special-details">Any special details?</span>
+      <textarea class="rectangle" [(ngModel)]="specialDetails" placeholder="Enter special details here"></textarea>
+      <button class="button-customize" (click)="addToCart(cosmetic)">
+        <span class="finish-add-cart">Finish and add to cart</span>
+      </button>
+    </div>
+    <button class="button-customize-1">
+      <span class="other-requirements">Other requirements? Chat with us!</span>
+    </button>
+</div>
+
+
+
+
